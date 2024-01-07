@@ -31,7 +31,7 @@ export class GifsService {
     this._tagsHistory = this.tagsHistory.splice(0, 10);
   }
 
-  async searchTag(tag: string): Promise<void> {
+  searchTag(tag: string): void {
     if (tag.length === 0) return;
     this.organizeHistory(tag);
 
